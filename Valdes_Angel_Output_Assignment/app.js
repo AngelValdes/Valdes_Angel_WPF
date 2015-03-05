@@ -13,5 +13,16 @@
     // declare variable and assign boolean value
     var gymHasRacquetballCourts = true;
 
+    // display message in the console concatenating string and the variables' values
+    console.log("To do exercise, I usually go to gym \"" + gymName + "\" located at " + gymAddress + ". My gym has " + gymFloors + " floors full of machines.\nDoes my gym have racquetball courts?:" + gymHasRacquetballCourts);
 
+    // I would definitely prefer to create an object called gym with all this properties inside, but one step at a time. :) 
+    var gym = {
+        name: "LA Fitness",
+        address: "",
+        floors: 2,
+        hasRacquetballCourts: true
+    };
+
+    console.log("..." + gym.name + "...");
 })();
