@@ -53,5 +53,16 @@
     var result = a2 + b2;
     console.log("result=" + result);
 
+    // casting Number(), String(), Array(), Boolean()
+    var stringVar = "6";
+    var result2 = 7 + Number(stringVar);
+    console.log("result2=" + result2);
+
+    var areaCode = 407;
+    var firstPart = 203;
+    var secPart = 4529;
+    var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
+    console.log("Phone=" + phoneNo);
+
 
 })();
