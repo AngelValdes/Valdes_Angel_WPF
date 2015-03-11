@@ -11,6 +11,8 @@
     var interestRate = Number(window.prompt("Enter interest rate:"));
     var percentDownPayment = Number(window.prompt("Enter % down payment"));
 
- 
+    var downPayment = (loanAmount * percentDownPayment) / 100;
+    console.log("Down payment: $" + downPayment);
+  
 
 })();
