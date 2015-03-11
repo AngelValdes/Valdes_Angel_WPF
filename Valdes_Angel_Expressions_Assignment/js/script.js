@@ -10,10 +10,12 @@
     var interestRate = Number(window.prompt("Enter interest rate:"));
     // variable declaration and assignment for percent down payment
     var percentDownPayment = Number(window.prompt("Enter % down payment"));
+    // variable declaration and assignment for number of years
+    var numberOfYears = Number(window.prompt("Enter number of years"));
     // down payment calculation and display
     var downPayment = (loanAmount * percentDownPayment) / 100;
     console.log("Down payment: $" + downPayment);
-  
-    
+    // variable declaration and assignment from prompt for FHA
+    var isFha = window.prompt("Is this FHA (Y)|(N):");
 
 })();
