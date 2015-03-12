@@ -35,7 +35,7 @@
     // calculate monthly PrincipalAndInterest
     var calcMonthlyInterest = (1 + monthlyInterestRate);
     var monthlyPrincipalAndInterest = (loanAmount * (monthlyInterestRate * (Math.pow(calcMonthlyInterest, payments)))) / (Math.pow(calcMonthlyInterest, payments) - 1);
-    // display final result
+
     console.log("For an input sale price of $" + salePrice + ", monthly interest rate of " + interestRate + "%, a percent down payment of " + percentDownPayment + "%, and a loan for " + nbrOfYearsEntered + " years. \n Your loan amount is $" + loanAmount +  " after a down payment of $" + downPayment + ", your monthly principal + interest amount is: $" + monthlyPrincipalAndInterest + ". \n Your estimated PMI is $" + pmiAmount + ".");
 
 
