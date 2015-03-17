@@ -50,4 +50,22 @@
         console.log("User not found. Try again.");
     }
 
+    //Group 3: Multiple Conditions (Choose 1 from this group)
+    /*Tire Pressure I
+    To meet to maintenance standards a car’s front two tires should have the same pressure and the back two tires should have the same pressure.  But the front tires and the rear tires can have different pressure than each other, so it is not necessary for all four tires’ pressure to be the same. Create a single conditional that would determine if the tires of a given car are up to spec. Given: Pressure for each tire of the car (in psi) in an array. Result To Print Out: “The tires pass spec!” Or  “ Get your tires checked out!”*/
+    var frontLeft = Number(window.prompt("Enter front left tire preassure:", 30));
+    var frontRight = Number(window.prompt("Enter front right tire preassure:", 30));
+    var backLeft = Number(window.prompt("Enter back left tire preassure:", 35));
+    var backRight = Number(window.prompt("Enter back right tire preassure:", 35));
+
+    var tiresPressures = [frontLeft, frontRight, backLeft, backRight];
+    if (tiresPressures[0] === tiresPressures[1] && tiresPressures[2] == tiresPressures[3]) {
+        console.log("The tires pass spec!");
+    } else {
+        console.log("Get your tires checked out!");
+    }
+
+    /* Movie Ticket Price (optional)
+    The local movie theater in town has a ticket price of $12.00 but if you are a senior (55 and older), under 10 you get the discounted price of $7.00. In addition, if a customer is seeing a movie between 3pm and 5pm they can also get the discounted price.
+    Determine which of the two prices the customer is eligible for. Given: Time of Movie (Assume whole numbers here), Age of the customer, Result To Print Out: “The ticket price is X”*/
 })();
