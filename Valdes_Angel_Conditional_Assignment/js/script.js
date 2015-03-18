@@ -32,7 +32,11 @@
         suggestedTip = tipAmount;
         // display suggestedTip
         console.log("Your suggested tip is $" + tipAmount);
-       
+        // input additionalTip
+        do {
+            additionalTip = Number(window.prompt("Enter Additional tip amount:", 0));
+        } while (additionalTip < 0 || isNaN(additionalTip)) // validate values 0 or positive numbers only
+
     } else if (dinneIn.toLowerCase() === "n") { // no dinning in = no tip
         console.log("Suggested tip is only when dinning in.");
     } else {
