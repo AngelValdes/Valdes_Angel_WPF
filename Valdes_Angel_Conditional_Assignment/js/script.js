@@ -37,6 +37,12 @@
             additionalTip = Number(window.prompt("Enter Additional tip amount:", 0));
         } while (additionalTip < 0 || isNaN(additionalTip)) // validate values 0 or positive numbers only
 
+        // additionalTip? increase tipAmount with additionalTip
+        if (additionalTip > 0) {
+            tipAmount += (additionalTip > 0) ? additionalTip : 0; // ternary conditional
+            // display current tipAmount
+            console.log("Your new tip amount is suggested tip of $" + suggestedTip + " + additional tip amount of $" + additionalTip + " for a total tip of $" + tipAmount);
+        }
     } else if (dinneIn.toLowerCase() === "n") { // no dinning in = no tip
         console.log("Suggested tip is only when dinning in.");
     } else {
