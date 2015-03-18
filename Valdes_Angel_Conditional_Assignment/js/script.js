@@ -15,5 +15,23 @@
         dinneIn = window.prompt("Dinner In? (y=Yes) (n=No):", "y");
     } while (!(dinneIn in { "y": 0, "Y": 0, "n": 0, "N": 0 }))// validate values in list
 
-    
+    // dinneIn?
+    if (dinneIn.toLowerCase() === "y") {
+        // serviceQuality prompt, validation, and variable assignment
+        do {
+            serviceQuality = window.prompt("Service quality (b=bad) (g=good) (e=excellent):", "g");
+        } while (!(serviceQuality in { "b": 0, "B": 0, "g": 0, "G": 0, "e": 0, "E": 0 })) // validate values in list
+        // tip percent selection
+        
+    } else if (dinneIn.toLowerCase() === "n") { // no dinning in = no tip
+        console.log("Suggested tip is only when dinning in.");
+    } else {
+        console.log("Some strange value you entered! ...");
+    }
+
+
+    // calculate totalCharge
+    totalCharge = dinnerCost + tipAmount;
+    // display totalCharge
+    console.log("Your total charge for a dinne in cost of $" + dinnerCost + " + the tip of $" + tipAmount + " is $" + totalCharge);
 })();
