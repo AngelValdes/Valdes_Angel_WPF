@@ -22,7 +22,17 @@
             serviceQuality = window.prompt("Service quality (b=bad) (g=good) (e=excellent):", "g");
         } while (!(serviceQuality in { "b": 0, "B": 0, "g": 0, "G": 0, "e": 0, "E": 0 })) // validate values in list
         // tip percent selection
-        
+        if (serviceQuality.toLowerCase() === "g" || serviceQuality.toLowerCase() === "e") {
+            tipPercent = 15;
+        } else { // bad service = no tip
+            tipPercent = 0;
+        }
+        // calculate tipAmount and store it in suggestedTip for messaging purpose
+        tipAmount = (dinnerCost * tipPercent) / 100;
+        suggestedTip = tipAmount;
+        // display suggestedTip
+        console.log("Your suggested tip is $" + tipAmount);
+       
     } else if (dinneIn.toLowerCase() === "n") { // no dinning in = no tip
         console.log("Suggested tip is only when dinning in.");
     } else {
