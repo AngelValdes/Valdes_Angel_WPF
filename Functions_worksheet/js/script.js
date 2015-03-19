@@ -48,8 +48,9 @@
     // function definition
     function calcNbrOfBeesPerPound(w,r)
     {
-        return w * ratio;
+        return w * r;
     }
     // calculation calling function
+    numberOfBees = calcNbrOfBeesPerPound(victimWeight, ratio);
 
 })();
