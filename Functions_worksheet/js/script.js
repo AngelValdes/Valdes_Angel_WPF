@@ -21,7 +21,7 @@
     // variable definitions
     var radius = 0, PI = 3.14,  circumference = 0, message = "The circumference of the circle is ";
     // radius prompt and validation
-    do { //loop
+    do { // loop validation
         radius = Number(window.prompt("Enter radius of a circle:", 10));
     } while (radius <= 0 || isNaN(radius))
     // function definition
