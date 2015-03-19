@@ -50,5 +50,6 @@
     {
         return w * ratio;
     }
+    // calculation calling function
 
 })();
