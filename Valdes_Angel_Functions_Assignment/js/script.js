@@ -2,5 +2,6 @@
 
 (function () {
     "use strict";
+    // Florida lottery game
 
 })();
