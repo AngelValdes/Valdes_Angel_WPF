@@ -9,7 +9,10 @@
      */
     // variable definitions
     var radius = 0, result = 0, message = "The circumference of the circle is ";
-   
+    // radius prompt and validation
+    do { //loop
+        radius = Number(window.prompt("Enter radius of a circle:", 10));
+    } while (radius <= 0 || isNaN(radius))
 
 
 })();
