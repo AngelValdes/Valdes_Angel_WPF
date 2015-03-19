@@ -19,7 +19,8 @@
     }
     // calculation calling function
     circumference = calculateCircumference(radius);
-   
+    // display result
+    console.log(message + circumference);
 
 
 })();
