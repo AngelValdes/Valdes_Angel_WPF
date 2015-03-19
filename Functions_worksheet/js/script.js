@@ -17,6 +17,8 @@
     function calculateCircumference(r) {
         return 2 * PI * r;
     }
+    // calculation calling function
+    circumference = calculateCircumference(radius);
    
 
 
