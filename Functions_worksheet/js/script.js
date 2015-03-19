@@ -25,11 +25,11 @@
         radius = Number(window.prompt("Enter radius of a circle:", 10));
     } while (radius <= 0 || isNaN(radius))
     // function definition
-    function calculateCircumference(r) {
+    function calcCircumference(r) {
         return 2 * PI * r;
     }
     // calculation calling function
-    circumference = calculateCircumference(radius);
+    circumference = calcCircumference(radius);
     // display result
     console.log(message + circumference);
 
@@ -40,10 +40,15 @@
         Return: Number of Bee stings
         Result to print to the console: “It takes X bee stings to kill this animal.*/
     // variable definitions
-    var victimWeight = 0, numberOfBees = 0;
+    var victimWeight = 0, ratio = 8.666666667, numberOfBees = 0;
     // victimWeight prompt and validation
     do { //loop
         victimWeight = Number(window.prompt("Enter victim weight in pounds:", 10));
     } while (victimWeight <= 0 || isNaN(victimWeight))
+    // function definition
+    function calcNbrOfBeesPerPound(w,r)
+    {
+        return w * ratio;
+    }
 
 })();
