@@ -41,6 +41,9 @@
         Result to print to the console: “It takes X bee stings to kill this animal.*/
     // variable definitions
     var victimWeight = 0, numberOfBees = 0;
-
+    // victimWeight prompt and validation
+    do { //loop
+        victimWeight = Number(window.prompt("Enter victim weight in pounds:", 10));
+    } while (victimWeight <= 0 || isNaN(victimWeight))
 
 })();
