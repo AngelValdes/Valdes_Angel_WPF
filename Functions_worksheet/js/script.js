@@ -52,5 +52,5 @@
     }
     // calculation calling function
     numberOfBees = calcNbrOfBeesPerPound(victimWeight, ratio);
-
+    // display result
 })();
