@@ -42,7 +42,7 @@
     // variable definitions
     var victimWeight = 0, ratio = 8.666666667, numberOfBeeStings = 0;
     // victimWeight prompt and validation
-    do { //loop
+    do { // loop validation
         victimWeight = Number(window.prompt("Enter victim weight in pounds:", 10));
     } while (victimWeight <= 0 || isNaN(victimWeight))
     // function definition
