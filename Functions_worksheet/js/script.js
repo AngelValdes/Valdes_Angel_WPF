@@ -40,7 +40,7 @@
         Return: Number of Bee stings
         Result to print to the console: “It takes X bee stings to kill this animal.*/
     // variable definitions
-    var victimWeight = 0, ratio = 8.666666667, numberOfBees = 0;
+    var victimWeight = 0, ratio = 8.666666667, numberOfBeeStings = 0;
     // victimWeight prompt and validation
     do { //loop
         victimWeight = Number(window.prompt("Enter victim weight in pounds:", 10));
@@ -51,6 +51,7 @@
         return w * r;
     }
     // calculation calling function
-    numberOfBees = calcNbrOfBeesPerPound(victimWeight, ratio);
+    numberOfBeeStings = calcNbrOfBeesPerPound(victimWeight, ratio);
     // display result
+    console.log("It takes " + numberOfBeeStings + " bee stings to kill this animal.");
 })();
