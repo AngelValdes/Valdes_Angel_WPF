@@ -22,5 +22,8 @@
         rangeMax = pbRangeMax;
         rangeQty = pbRangeQty;
     }
+    // prompt for player numbers
+    playerNumbers = promptNumbers(rangeMin, rangeMax, rangeQty);
+    // generate winning numbers
    
 })();
