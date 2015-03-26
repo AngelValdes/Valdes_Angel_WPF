@@ -25,5 +25,6 @@
     // prompt for player numbers
     playerNumbers = promptNumbers(rangeMin, rangeMax, rangeQty);
     // generate winning numbers
-   
+    winningNumbers = generateWinningNumbers(rangeMin, rangeMax, rangeQty);
+    
 })();
