@@ -26,5 +26,7 @@
     playerNumbers = promptNumbers(rangeMin, rangeMax, rangeQty);
     // generate winning numbers
     winningNumbers = generateWinningNumbers(rangeMin, rangeMax, rangeQty);
-    
+    // find matches
+    numbersRangeMatching = findMatches(winningNumbers, playerNumbers);
+   
 })();
