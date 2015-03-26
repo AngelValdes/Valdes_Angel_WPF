@@ -7,5 +7,10 @@
     // variables declaration
     var lotteryGame, lotteryType, rangeMin = 1, flRangeMax = 53, flRangeQty = 6, pbRangeMax = 59, pbRangeQty = 5, pbMax = 35, pbQty = 1, rangeMax = 0, rangeQty = 0, playerNumbers = [], pbPlayerNumber, winningNumbers = [], pbWinningNumber, numbersRangeMatching, pbMatch = false, winner = false, resultMessage;
 
+    // choose between games
+    do {//loop
+        lotteryGame = window.prompt("Choose game? (Florida Lotery=f) (Powerball=p):", "f");
+    } while (!(lotteryGame in { "f": 0, "F": 0, "p": 0, "P": 0 }))// validate values in list
+
    
 })();
