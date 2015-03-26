@@ -34,5 +34,9 @@
         pbWinningNumber = generateWinningNumbers(rangeMin, pbMax, pbQty);
         pbMatch = (pbPlayerNumber[0] == pbWinningNumber[0]);
     }
-    
+    // check for winner
+    winner = checkWinner(numbersRangeMatching, pbMatch);
+    // calling function to construct message
+    resultMessage = constructMessage(winner, lotteryType, numbersRangeMatching);
+   
 })();
