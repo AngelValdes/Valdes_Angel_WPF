@@ -2,20 +2,7 @@
 
 (function () {
     "use strict";
-    // Florida lottery game (6 numbers between 1 and 53)
-    // variables declaration
-    var playerNumbers = [], lastNumberPlayed = 0, winningNumbers = [];
-    // Prompt for 6 numbers and validating numbers
-    for (var i = 1; i <= 6; i++) {
+    // Lottery games Florida lottery (6 numbers between 1 and 53) || Powerball (5 numbers between 1 and 59 + 1 number between 1 and 35)
 
-        do { // loop validation
-            lastNumberPlayed = Number(window.prompt("[From 1 to 53], Enter lottery number ("+ i + "):", 10));
-        } while (lastNumberPlayed < 1 || isNaN(lastNumberPlayed || lastNumberPlayed > 53));
-        // add player numbers to array
-        playerNumbers.push(lastNumberPlayed);
-    };
-    // generate winning numbers
-
-    console.log("ready");
-
+   
 })();
