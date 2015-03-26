@@ -28,5 +28,11 @@
     winningNumbers = generateWinningNumbers(rangeMin, rangeMax, rangeQty);
     // find matches
     numbersRangeMatching = findMatches(winningNumbers, playerNumbers);
-   
+    // prompt for extra number for powerball
+    if (lotteryType == "Powerball") {
+        pbPlayerNumber = promptNumbers(rangeMin, pbMax, pbQty);
+        pbWinningNumber = generateWinningNumbers(rangeMin, pbMax, pbQty);
+        pbMatch = (pbPlayerNumber[0] == pbWinningNumber[0]);
+    }
+    
 })();
