@@ -12,5 +12,15 @@
         lotteryGame = window.prompt("Choose game? (Florida Lotery=f) (Powerball=p):", "f");
     } while (!(lotteryGame in { "f": 0, "F": 0, "p": 0, "P": 0 }))// validate values in list
 
+    // florida lottery? otherwise powerball
+    if (lotteryGame.toLowerCase() == "f") {
+        lotteryType = "FloridaLotto";
+        rangeMax = flRangeMax;
+        rangeQty = flRangeQty;
+    } else {
+        lotteryType = "Powerball";
+        rangeMax = pbRangeMax;
+        rangeQty = pbRangeQty;
+    }
    
 })();
